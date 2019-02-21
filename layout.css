@@ -1,0 +1,288 @@
+/*body opmaak*/
+* {
+	box-sizing:border-box;
+}
+body {
+	background-color: black;
+	color: black;
+	font-family: 'Space Mono', monospace;
+	margin: 20px;
+
+}
+/*gird opmaak*/
+.title {
+		grid-area: title;
+}
+#demo {
+		grid-area: demo;
+}
+.header {
+		grid-area: header;
+		/*background-color: red;*/
+}
+.main {
+		grid-area: main;
+		/*background-color: green;*/
+}
+.aside {
+		grid-area: aside;
+		/*background-color: blue;*/
+}
+	
+.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title title'
+			'demo demo demo demo'
+			'header header header header'
+			'main main main main'
+			'aside aside aside aside';
+		grid-gap: 25px;
+		padding: 10px;
+}
+.first-container > div {
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		/*background-color: black;*/
+}
+/*logo*/
+.title {
+	background-color: black;
+
+}
+.title img {
+	width: 55%;
+
+}
+.title {
+	margin-bottom: -12%;
+}
+/*title*/
+h1 {
+	color: white;
+	font-size: 30pt;
+	text-align: center;
+}
+/*aftelklik*/
+#demo {
+	  text-align: center;
+	  font-size: 20px;
+	  color: white;
+	  background-color: black;
+	  padding: 0;
+}
+
+#chartContainer-lijn, #chartContainer-staaf, #chartContainer-circle {
+		height: 370px;
+		width: 100%;
+}
+
+
+@media only screen and (min-width:360px) and (max-width:640px) {
+/*grid opmaak*/
+	.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title title'
+			'demo demo demo demo'
+			'header header header header'
+			'main main main main'
+			'aside aside aside aside';
+		grid-gap: 25px;
+		padding: 10px;
+}
+	.first-container > div {
+		text-align: center;
+		/*padding: 20px 0;*/
+		/*background-color: white;*/
+		
+
+}
+/*logo*/
+.first-container > .title {
+	background-color: black;
+}
+.title > img {
+	width: 65%;
+	height: auto;
+}
+.title {
+	margin-bottom: -10%;
+}
+/*aftelklik*/
+#demo {
+	  text-align: center;
+	  font-size: 30px;
+	  color: white;
+	  background-color: black;
+	  margin-top: -25px;
+}
+/*lijn grafiek: brandstof*/
+.header > #chartContainer {
+	width: 100%;
+	height: 370px;
+}
+#chartContainer-lijn, #chartContainer-staaf, #chartContainer-circle {
+	height: 370px;
+	width: 100%;
+	font-family: 'Space Mono', monospace;
+}
+/*achtergrond grafieken*/
+.header > div {
+	background-color: black;
+	color: white;
+}
+	
+
+
+}
+
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 1239px) {
+/*grid opmaak*/
+	.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title title'
+			'demo demo demo demo'
+			'header header header header'
+			'main main aside aside';
+		grid-gap: 25px;
+		padding: 10px;
+}
+	.first-container > div {
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		/*background-color: white;*/
+}
+/*logo*/
+.first-container > .title {
+	background-color: black;
+}
+.title img {
+	width: 40%;
+	max-width: 100%;
+	height: auto;
+}
+.title {
+	margin-bottom: -8%;
+}
+/*aftelklik*/
+#demo {
+	  text-align: center;
+	  font-size: 60px;
+	  color: white;
+	  background-color: black;
+	  padding: 50px;
+}
+#chartContainer-lijn, #chartContainer-staaf, #chartContainer-circle {
+		height: 370px;
+		width: 100%;
+	}
+}
+
+
+
+@media only screen and (min-width: 1240px) and (max-width: 1365px) {
+	/*grid opmaak*/
+	.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title title'
+			'demo demo demo demo'
+			'header header main main'
+			'. aside aside .';
+		grid-gap: 25px;
+		padding: 10px;
+}
+	.first-container > div {
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		/*background-color: white;*/
+}
+/*logo*/
+.first-container > .title {
+	background-color: black;
+}
+.title img {
+	width: 30%;
+	/*max-width: 100%;*/
+	height: auto;
+}
+.title {
+	margin-bottom: -10%;
+}
+/*aftelklik*/
+#demo {
+	  text-align: center;
+	  font-size: 80px;
+	  color: white;
+	  background-color: black;
+	  padding: 43px;
+}
+#chartContainer-lijn, #chartContainer-staaf, #chartContainer-circle {
+		height: 370px;
+		width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 1366px) {
+	/*grid opmaak*/
+	.first-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title title'
+			'demo demo demo demo'		
+			'header header main main'
+			'aside aside aside aside';
+		grid-gap: 30px;
+		padding: 10px;
+}
+	.first-container > div {
+		text-align: center;
+		padding:  0px;
+		font-size: 30px;
+		/*background-color: white;*/
+}
+/*logo*/
+.first-container > .title {
+	background-color: black;
+}
+.title img {
+	width: 25%;
+	max-width: 100%;
+	height: auto;
+}
+.title {
+	margin-bottom: -5%;
+}
+/*aftelklik*/
+#demo {
+	  text-align: center;
+	  font-size: 100px;
+	  color: white;
+	  background-color: black;
+	  padding: 40px;
+}
+#chartContainer-lijn, #chartContainer-staaf, #chartContainer-circle {
+	height: 370px;
+	width: 100%;
+}
+div > #chartContainer-circle {
+	height: 370px;
+	width: 100%;
+}
+
+	
+}
